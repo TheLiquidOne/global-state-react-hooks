@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is to provide an example of creating your own state application manager using only native feature of React.
 
 ## Available Scripts
 
