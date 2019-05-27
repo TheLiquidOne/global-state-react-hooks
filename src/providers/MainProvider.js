@@ -13,13 +13,14 @@ export const MainProvider = ({ children }) => {
         {
             todoState
             /**
-             * Put every reducer value here
+             * Put every reducer data here
              */
         }
         , action => [
             todoDispatch
             /**
              * Put every dispatch function from your reducers here
+             * At every action, we dispatch to all reducers
              */
         ].forEach(reducer => reducer(action))
     ]

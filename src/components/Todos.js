@@ -2,7 +2,8 @@ import React from 'react'
 import { MainContext } from '../providers/MainProvider';
 
 export const Todos = () => {
-    const [{ todoState }] = React.useContext(MainContext)
+    const [{ todoState }, dispatch] = React.useContext(MainContext)
+    console.log(todoState, dispatch)
     return (
         <div>
             {

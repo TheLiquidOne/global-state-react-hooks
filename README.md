@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project is to provide an example of creating your own state application manager using only native feature of React with global dispatcher.
 
+## Understanding
+
+All logical codes are in `src/MainProvider`.
+
 ## Running
 
 In the project directory, you can run:
