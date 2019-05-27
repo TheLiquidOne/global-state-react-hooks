@@ -1,12 +1,12 @@
 import React from 'react'
-import { TodoContext } from '../providers/TodosProvider';
+import { MainContext } from '../providers/MainProvider';
 
 export const Todos = () => {
-    const [{ todos }] = React.useContext(TodoContext)
+    const [{ todoState }] = React.useContext(MainContext)
     return (
         <div>
             {
-                todos.map((elem, index) => <div key={index}>{elem}</div>)
+                todoState.todos.map((elem, index) => <div key={index}>{elem}</div>)
             }
         </div>
     )

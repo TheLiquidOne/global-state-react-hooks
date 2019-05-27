@@ -1,10 +1,10 @@
-import React from 'react'
-import { TodoContext } from '../providers/TodosProvider';
+import React from 'react';
 import { ADD_TODO } from '../constants';
+import { MainContext } from '../providers/MainProvider';
 
 export const TodoForm = () => {
     const inputRef = React.useRef(null)
-    const [, dispatch] = React.useContext(TodoContext)
+    const [, dispatch] = React.useContext(MainContext)
     return (
         <div>
             <input ref={inputRef} placeholder='todo'/>

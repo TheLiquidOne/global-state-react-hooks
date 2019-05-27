@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Todos } from './components/Todos';
 import { TodoForm } from './components/TodoForm';
-import { TodosProvider } from './providers/TodosProvider';
-import { initialState, todoReducer } from './reducers/TodosReducer';
+import { MainProvider } from './providers/MainProvider';
 
 class App extends Component {
   render() {
     return (
-      <TodosProvider initialState={initialState} reducer={todoReducer}>
+      <MainProvider>
         <Todos />
         <TodoForm />
-      </TodosProvider>
+      </MainProvider>
     );
   }
 }
