@@ -3,7 +3,7 @@ This project is to provide an example of creating your own state application man
 
 ## Understanding
 
-All logical codes are in `src/MainProvider`.
+All logical codes are in `src/providers/MainProvider`.
 
 ## Running
 
