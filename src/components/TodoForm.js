@@ -4,6 +4,9 @@ import { MainContext } from '../providers/MainProvider';
 
 export const TodoForm = () => {
     const inputRef = React.useRef(null)
+    /**
+     * Access in writing to global state
+     */
     const [, dispatch] = React.useContext(MainContext)
     return (
         <div>
